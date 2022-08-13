@@ -48,7 +48,6 @@ const calculator = () => {
         console.log(stack[stack.length - 1].toString())
       }
     }
-
   }
 }
 
@@ -78,6 +77,7 @@ const parseInput = (input) => {
     }
   })
 }
+
 const preformCalculation = (stack, operation) => {
   let result
   const firstVal = stack.pop()
@@ -101,9 +101,8 @@ const preformCalculation = (stack, operation) => {
     default:
       return
   }
-
-
 }
+
 module.exports = {
   calculator
 }
